@@ -29,4 +29,6 @@ jobs:
       with:
         # File to upload to the release
         file: build/Release/libUniversalDialogCocoaBinding.dylib
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
