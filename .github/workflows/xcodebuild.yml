@@ -6,9 +6,7 @@ name: XcodeBuild
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    tags: [ master ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -25,9 +23,9 @@ jobs:
     - name: Build
       run: xcodebuild
       
-    - name: Create GitHub release
-      uses: Roang-zero1/github-upload-release-artifacts-action@master
+    - name: Action Release
+      uses: yakuhzi/action-release@v1.2.0
       with:
-        args: build/Release/libUniversalDialogCocoaBinding.dylib
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # File to upload to the release
+        file: build/Release/libUniversalDialogCocoaBinding.dylib
+
