@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1655F322245ACCFD000A4536 /* UniversalDialogCocoaBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 1655F321245ACCFD000A4536 /* UniversalDialogCocoaBinding.h */; };
-		1655F324245ACCFD000A4536 /* UniversalDialogCocoaBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 1655F323245ACCFD000A4536 /* UniversalDialogCocoaBinding.m */; };
+		1655F32B245AD11E000A4536 /* Binding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1655F32A245AD11E000A4536 /* Binding.cpp */; };
+		1655F32E245AD2D6000A4536 /* PlaceHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 1655F32C245AD2D6000A4536 /* PlaceHolder.h */; };
+		1655F32F245AD2D6000A4536 /* PlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1655F32D245AD2D6000A4536 /* PlaceHolder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1655F31E245ACCFD000A4536 /* libUniversalDialogCocoaBinding.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libUniversalDialogCocoaBinding.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		1655F321245ACCFD000A4536 /* UniversalDialogCocoaBinding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UniversalDialogCocoaBinding.h; sourceTree = "<group>"; };
-		1655F323245ACCFD000A4536 /* UniversalDialogCocoaBinding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UniversalDialogCocoaBinding.m; sourceTree = "<group>"; };
+		1655F32A245AD11E000A4536 /* Binding.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Binding.cpp; sourceTree = "<group>"; };
+		1655F32C245AD2D6000A4536 /* PlaceHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceHolder.h; sourceTree = "<group>"; };
+		1655F32D245AD2D6000A4536 /* PlaceHolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceHolder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,8 +49,9 @@
 		1655F320245ACCFD000A4536 /* UniversalDialogCocoaBinding */ = {
 			isa = PBXGroup;
 			children = (
-				1655F321245ACCFD000A4536 /* UniversalDialogCocoaBinding.h */,
-				1655F323245ACCFD000A4536 /* UniversalDialogCocoaBinding.m */,
+				1655F32A245AD11E000A4536 /* Binding.cpp */,
+				1655F32C245AD2D6000A4536 /* PlaceHolder.h */,
+				1655F32D245AD2D6000A4536 /* PlaceHolder.m */,
 			);
 			path = UniversalDialogCocoaBinding;
 			sourceTree = "<group>";
@@ -60,7 +63,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1655F322245ACCFD000A4536 /* UniversalDialogCocoaBinding.h in Headers */,
+				1655F32E245AD2D6000A4536 /* PlaceHolder.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,7 +124,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1655F324245ACCFD000A4536 /* UniversalDialogCocoaBinding.m in Sources */,
+				1655F32B245AD11E000A4536 /* Binding.cpp in Sources */,
+				1655F32F245AD2D6000A4536 /* PlaceHolder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
