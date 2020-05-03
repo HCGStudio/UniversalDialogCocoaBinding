@@ -7,16 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1655F32B245AD11E000A4536 /* Binding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1655F32A245AD11E000A4536 /* Binding.cpp */; };
-		1655F32E245AD2D6000A4536 /* PlaceHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 1655F32C245AD2D6000A4536 /* PlaceHolder.h */; };
-		1655F32F245AD2D6000A4536 /* PlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1655F32D245AD2D6000A4536 /* PlaceHolder.m */; };
+		162940F3245EC73800299C75 /* Binding.m in Sources */ = {isa = PBXBuildFile; fileRef = 162940F2245EC73800299C75 /* Binding.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		162940F2245EC73800299C75 /* Binding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Binding.m; sourceTree = "<group>"; };
 		1655F31E245ACCFD000A4536 /* libUniversalDialogCocoaBinding.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libUniversalDialogCocoaBinding.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		1655F32A245AD11E000A4536 /* Binding.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Binding.cpp; sourceTree = "<group>"; };
-		1655F32C245AD2D6000A4536 /* PlaceHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceHolder.h; sourceTree = "<group>"; };
-		1655F32D245AD2D6000A4536 /* PlaceHolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceHolder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,9 +45,7 @@
 		1655F320245ACCFD000A4536 /* UniversalDialogCocoaBinding */ = {
 			isa = PBXGroup;
 			children = (
-				1655F32A245AD11E000A4536 /* Binding.cpp */,
-				1655F32C245AD2D6000A4536 /* PlaceHolder.h */,
-				1655F32D245AD2D6000A4536 /* PlaceHolder.m */,
+				162940F2245EC73800299C75 /* Binding.m */,
 			);
 			path = UniversalDialogCocoaBinding;
 			sourceTree = "<group>";
@@ -63,7 +57,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1655F32E245AD2D6000A4536 /* PlaceHolder.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,10 +87,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1130;
-				ORGANIZATIONNAME = "尹照宇";
+				ORGANIZATIONNAME = HCGStudio;
 				TargetAttributes = {
 					1655F31D245ACCFD000A4536 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -107,6 +101,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hans",
 				Base,
 			);
 			mainGroup = 1655F315245ACCFD000A4536;
@@ -124,8 +119,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1655F32B245AD11E000A4536 /* Binding.cpp in Sources */,
-				1655F32F245AD2D6000A4536 /* PlaceHolder.m in Sources */,
+				162940F3245EC73800299C75 /* Binding.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,26 +238,41 @@
 		1655F328245ACCFD000A4536 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45P7T5DHHS;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		1655F329245ACCFD000A4536 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45P7T5DHHS;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
